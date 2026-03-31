@@ -6,7 +6,7 @@ import './App.css'
 function App() {
   function CallFun()
         {
-            alert("Function Call")
+            alert("You are click on OK button")
         }
   function Banana()
         {
