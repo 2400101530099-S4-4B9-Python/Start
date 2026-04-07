@@ -4,25 +4,44 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  function CallFun()
-        {
-            alert("You are click on OK button")
-        }
-  function Banana()
-        {
-            alert("You are click on BANANA button")
-        }
-   function Apple()
-        {
-            alert("You are click on APPLE button")
-        }     
+  let data="Demo"
+   function updata()
+   {
+    data="Example"
+    alert(data);
+   }
+    
   return(
-<>
-    <button onClick={CallFun}>OK</button>
-    <button onClick={Banana}>BANANA</button>
-    <button onClick={Apple}>APPLE</button>
-    <h1>WELCOME TO EVENT HANDLING</h1>
-</>
+    <>
+    <h1>State in react</h1>
+    <h1>{data}</h1>
+    <button onClick={updata}>Click to change value</button>
+    
+    </>
   )
+  
+  //   function callFun()
+  //   {
+  //       alert("Click")
+  //   }
+  //   const fruit=(name)=>
+  //   {
+  //     alert("Example of arrow function")
+  //   }
+  //    const type=(name)=>
+  //   {
+  //     alert("Types of Fruit")
+  //   }
+    
+  // return(
+  //   <>
+  //   <h1>Example of Arrow Funtion</h1>
+  //   <button onClick={callFun}>Click to call function</button>
+  //   <button onClick={()=>fruit("first parameter")}>Arrow Function</button>
+  //   <button onClick={()=>type("first parameter")}>Banana</button>
+  //   <button onClick={()=>type("first parameter")}>Apple</button>
+  //   </>
+  // )
+  
 }
 export default App
