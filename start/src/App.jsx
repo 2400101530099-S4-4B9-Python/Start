@@ -4,21 +4,52 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  let data="Demo"
-   function updata()
-   {
-    data="Example"
-    alert(data);
-   }
-    
+  const [data,setdata]=useState("Hello");
+  function fun()
+  {
+    setdata("Changed value")
+  }
+  //Assignment 1
+  const [status, setStatus]=useState("OFF");
+  function toggleButton(){
+    if(status==="OFF"){
+      setStatus("ON");
+    }else{
+      setStatus("OFF");
+    }
+
+  
+  }
+
   return(
     <>
-    <h1>State in react</h1>
+    <h1>State of variable</h1>
     <h1>{data}</h1>
-    <button onClick={updata}>Click to change value</button>
+    <button onClick={fun}>click</button>
+    //Assignment 1
+    <h1>Toggle Button</h1>
+
+      <button onClick={toggleButton}>{status}</button>
+
+  
     
     </>
   )
+  // let data="Demo"
+  //  function updata()
+  //  {
+  //   data="Example"
+  //   alert(data);
+  //  }
+    
+  // return(
+  //   <>
+  //   <h1>State in react</h1>
+  //   <h1>{data}</h1>
+  //   <button onClick={updata}>Click to change value</button>
+    
+  //   </>
+  // )
   
   //   function callFun()
   //   {
